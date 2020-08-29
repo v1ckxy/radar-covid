@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/wrapperContent" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/wrapperButtons" app:layout_constraintTop_toTopOf="0" style="@style/ScrollVertical">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_background_corner_purple"/>
+                    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:src="@drawable/img_step2" android:layout_marginEnd="25dp"/>
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="140dp">
+                    <p002es.gob.radarcovid.common.view.LabelTextView android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/onboarding_title_step_2" android:layout_marginEnd="36dp" app:labelId="ONBOARDING_STEP_2_TITLE" style="@style/TitleMedium"/>
+                    <p002es.gob.radarcovid.common.view.LabelTextView android:textSize="22sp" android:textColor="@color/purple_9C" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:text="@string/onboarding_descrption_step2" app:labelId="ONBOARDING_STEP_2_SUBTITLE" style="@style/Title"/>
+                    <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/onboarding_step_2_commitments_title_1" app:labelId="ONBOARDING_STEP_2_PARAGRAPH_1_TITLE" style="@style/TitleExtraBoldSmall"/>
+                    <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:text="@string/onboarding_step_2_commitments_detail_1" app:labelId="ONBOARDING_STEP_2_PARAGRAPH_1_DESCRIPTION" style="@style/TextNormal"/>
+                    <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/onboarding_step_2_commitments_title_2" app:labelId="ONBOARDING_STEP_2_PARAGRAPH_2_TITLE" style="@style/TitleExtraBoldSmall"/>
+                    <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:text="@string/onboarding_step_2_commitments_detail_2" app:labelId="ONBOARDING_STEP_2_PARAGRAPH_2_DESCRIPTION" style="@style/TextNormal"/>
+                    <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/onboarding_step_2_commitments_title_3" app:labelId="ONBOARDING_STEP_2_PARAGRAPH_3_TITLE" style="@style/TitleExtraBoldSmall"/>
+                    <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:text="@string/onboarding_step_2_commitments_detail_3" app:labelId="ONBOARDING_STEP_2_PARAGRAPH_3_DESCRIPTION" style="@style/TextNormal"/>
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/padding_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/padding_content" android:paddingEnd="@dimen/padding_content">
+                <androidx.appcompat.widget.AppCompatCheckBox android:gravity="center_horizontal" android:id="@+id/checkBoxTermsAndConditions" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="5dp" android:button="@drawable/selector_checkbox"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <p002es.gob.radarcovid.common.view.LabelTextView android:textColor="@color/black_28" android:id="@+id/textViewPrivacyPolicy" android:paddingBottom="26dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/legal_info_privacy_policy" app:labelId="ONBOARDING_STEP_2_PRIVACY_POLICY" style="@style/TextSmall"/>
+                    <p002es.gob.radarcovid.common.view.LabelTextView android:textColor="@color/black_28" android:id="@+id/textViewUsageConditions" android:paddingBottom="26dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/legal_info_usage_conditions" app:labelId="ONBOARDING_STEP_2_USAGE_CONDITIONS" style="@style/TextSmall"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/wrapperButtons" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/wrapperContent">
+        <p002es.gob.radarcovid.common.view.LabelButton android:enabled="false" android:layout_gravity="bottom" android:id="@+id/buttonAccept" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/legal_info_button" app:labelId="ONBOARDING_CONTINUE_BUTTON" style="@style/ButtonNormal"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

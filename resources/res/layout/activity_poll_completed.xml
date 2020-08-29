@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/background_covid_report" android:scaleType="fitXY" app:layout_constraintTop_toTopOf="0"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0" style="@style/ScrollVertical">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="22dp" android:paddingTop="60dp" android:paddingRight="22dp" android:paddingBottom="22dp" android:focusable="true" android:focusableInTouchMode="true" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:src="@drawable/ic_confirmation_check"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/poll_completed_t1" style="@style/TitleMedium"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/poll_completed_p1" style="@style/TextSmallBlack"/>
+            <TextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/poll_completed_t2" style="@style/TitleSmall"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/poll_completed_p2" style="@style/TextSmallBlack"/>
+            <TextView android:textSize="16sp" android:id="@+id/textViewEmail" android:paddingBottom="26dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contact_email" style="@style/TitleSmall"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/poll_completed_p3" style="@style/TextSmallBlack"/>
+            <TextView android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/poll_completed_phone_attention_title" style="@style/TitleSmall"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="@string/poll_completed_phone_attention_message" style="@style/TextSmallBlack"/>
+            <include android:id="@+id/buttonContactSupport" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" layout="@layout/layout_contact_support"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

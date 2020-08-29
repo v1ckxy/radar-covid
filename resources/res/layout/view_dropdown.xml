@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@+id/wrapperHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <TextView android:textColor="@color/purple_9C" android:id="@+id/textViewDropdownTitle" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:layout_constraintEnd_toStartOf="@+id/imageViewDropdown" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/TitleSmall"/>
+        <ImageView android:layout_gravity="end" android:id="@+id/imageViewDropdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dropdown_closed" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:layout_constraintBottom_toBottomOf="@+id/textViewDropdownTitle" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="@+id/textViewDropdownTitle"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textColor="@color/black_26" android:id="@+id/textViewDropdownContent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/TextNormal"/>
+</LinearLayout>

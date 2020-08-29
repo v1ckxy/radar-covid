@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/layoutBackButton" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0" layout="@layout/layout_back_navigation"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/layoutBackButton" style="@style/ScrollVertical">
+        <LinearLayout android:orientation="vertical" android:paddingTop="10dp" android:paddingBottom="22dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/wrapperExposition" android:background="@drawable/background_exposition_low" android:paddingTop="30dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:paddingStart="16dp" android:paddingEnd="16dp" android:elevation="10dp">
+                <TextView android:id="@+id/textViewExpositionDetailTitleSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/exposure_detail_title" style="@style/TitleXSmall"/>
+                <TextView android:textColor="@color/black" android:id="@+id/textViewExpositionDetailTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/exposure_detail_low_title" style="@style/TitleMedium"/>
+                <TextView android:id="@+id/textViewExpositionLastUpdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="31dp" style="@style/TextSmall"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/wrapperExposureLow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_exposure_detail_low"/>
+                <include android:id="@+id/wrapperExposureHigh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_exposure_detail_high"/>
+                <include android:id="@+id/wrapperExposureInfected" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_exposure_detail_infected"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+    <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/exposure_detail_infected_p1" app:labelId="EXPOSITION_EXPOSED_PARAGRAPH_1" style="@style/TextSmallBlack"/>
+    <p002es.gob.radarcovid.common.view.LabelTextView android:textSize="22sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/exposure_detail_what_to_do" app:labelId="EXPOSITION_EXPOSED_WHAT_TO_DO_TITLE" style="@style/TitleExtraBoldSmall"/>
+    <p002es.gob.radarcovid.common.view.LabelTextView android:textSize="20sp" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:text="@string/exposure_detail_infected_what_to_do_subtitle" app:labelId="EXPOSITION_EXPOSED_WHAT_TO_DO_DESCRIPTION" style="@style/Title"/>
+    <p002es.gob.radarcovid.common.view.LabelTextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/exposure_detail_infected_tips_title" app:labelId="EXPOSITION_EXPOSED_RECOMENDATIONS_BULLET_TITLE" style="@style/Title"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_stay_home" android:layout_marginEnd="40dp"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:text="@string/confirmation_tip_1" app:labelId="EXPOSITION_EXPOSED_RECOMENDATIONS_BULLET_1" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_distance_people" android:layout_marginEnd="35dp"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:text="@string/confirmation_tip_2" app:labelId="EXPOSITION_EXPOSED_RECOMENDATIONS_BULLET_2" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_use_mask" android:layout_marginEnd="27dp"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:text="@string/confirmation_tip_3" app:labelId="EXPOSITION_EXPOSED_RECOMENDATIONS_BULLET_3" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_wash_your_hands" android:layout_marginEnd="25dp"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:text="@string/confirmation_tip_4" app:labelId="EXPOSITION_EXPOSED_RECOMENDATIONS_BULLET_4" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:src="@drawable/ic_clinic" android:layout_marginEnd="40dp"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:text="@string/confirmation_tip_5" app:labelId="EXPOSITION_EXPOSED_RECOMENDATIONS_BULLET_5" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:src="@drawable/ic_emergency_number" android:layout_marginEnd="40dp"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/confirmation_tip_6" app:labelId="EXPOSITION_EXPOSED_RECOMENDATIONS_BULLET_6" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <p002es.gob.radarcovid.common.view.MoreInfoButton android:id="@+id/buttonMoreInfoInfected" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp"/>
+    <p002es.gob.radarcovid.common.view.LabelTextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exposure_detail_acknowledgement_message" app:labelId="THANKS" style="@style/TitleSmall"/>
+</LinearLayout>

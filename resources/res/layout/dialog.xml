@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/shape_rounded_corners_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="14sp" android:textColor="@color/black_26" android:id="@+id/buttonClose" android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0dp" android:text="X" android:fontFamily="@font/muli_light" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/textViewDialogTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" style="@style/TextDialogTitle"/>
+    <TextView android:id="@+id/textViewDialogDescription" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" style="@style/TextDialogDescription"/>
+    <Button android:textColor="@color/white" android:id="@+id/buttonOk" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" style="@style/ButtonNormal"/>
+    <Button android:textSize="16sp" android:textColor="@color/black" android:id="@+id/buttonCancel" android:background="@drawable/shape_rounded_border_accent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textAllCaps="false" android:fontFamily="@font/muli_regular"/>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+    <p002es.gob.radarcovid.common.view.LabelTextView android:textSize="22sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="21dp" android:text="@string/exposure_detail_what_to_do" app:labelId="EXPOSITION_LOW_WHAT_TO_DO_TITLE" style="@style/TitleExtraBoldSmall"/>
+    <p002es.gob.radarcovid.common.view.LabelTextView android:textSize="20sp" android:textColor="@color/green" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="21dp" android:text="@string/exposure_detail_tips_title_low" app:labelId="EXPOSITION_LOW_WHAT_TO_DO_DESCRIPTION" style="@style/Title"/>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_distance_people"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exposure_detail_tip_distance" android:layout_marginStart="34dp" app:labelId="EXPOSITION_LOW_BULLET_1" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_use_mask"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exposure_detail_tip_mask" android:layout_marginStart="26dp" app:labelId="EXPOSITION_LOW_BULLET_2" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_wash_your_hands"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exposure_detail_tip_wash_hands" android:layout_marginStart="26dp" app:labelId="EXPOSITION_LOW_BULLET_3" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cough_hand"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exposure_detail_tip_cough" android:layout_marginStart="34dp" app:labelId="EXPOSITION_LOW_BULLET_4" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_rules"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exposure_detail_tip_rules" android:layout_marginStart="43dp" app:labelId="EXPOSITION_LOW_BULLET_5" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_clinic"/>
+        <p002es.gob.radarcovid.common.view.LabelTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exposure_detail_tip_clinic" android:layout_marginStart="44dp" app:labelId="EXPOSITION_LOW_BULLET_6" style="@style/TextSmallBlack"/>
+    </LinearLayout>
+    <p002es.gob.radarcovid.common.view.MoreInfoButton android:id="@+id/buttonMoreInfoLow" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp"/>
+    <p002es.gob.radarcovid.common.view.LabelTextView android:textSize="16sp" android:textColor="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exposure_detail_acknowledgement_message" app:labelId="THANKS" style="@style/TitleSmall"/>
+</LinearLayout>

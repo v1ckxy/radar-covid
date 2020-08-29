@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/viewBackground" android:background="#90000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p002es.gob.radarcovid.common.view.AnimatedCircleView android:layout_gravity="center" android:id="@+id/indicator" android:layout_width="100dp" android:layout_height="100dp"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/wrapperErrorMessage" android:background="@drawable/shape_rounded_corners_white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="14sp" android:textColor="@color/black_26" android:id="@+id/buttonClose" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0dp" android:text="X" android:fontFamily="@font/muli_light" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+        </LinearLayout>
+        <TextView android:id="@+id/textViewDialogTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" style="@style/TextDialogTitle"/>
+        <TextView android:id="@+id/textViewDialogDescription" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" style="@style/TextDialogDescription"/>
+        <Button android:textColor="@color/white" android:id="@+id/buttonOk" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" style="@style/ButtonNormal"/>
+    </LinearLayout>
+</FrameLayout>

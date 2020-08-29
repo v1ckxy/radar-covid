@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@drawable/shape_rounded_corners_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatSpinner android:id="@+id/spinnerRegion" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+        <androidx.appcompat.widget.AppCompatSpinner android:id="@+id/spinnerLanguage" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+    </FrameLayout>
+</LinearLayout>
